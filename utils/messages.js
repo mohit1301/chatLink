@@ -6,11 +6,19 @@ async function createMessage( msg, userId) {
   const user = await getCurrentUser(userId);
   const createdRoom = await getRoom(user.room)
 
+  const currentTime = new Date().toLocaleTimeString('en-US', {
+    hour: 'numeric',
+    minute: 'numeric',
+    hour12: true,
+    timeZone: 'UTC',
+  });
+
   return await Messages.create({
     roomId: createdRoom._id,
     userId: user.userId,
     userName: user.userName,
     text: msg,
+    time: currentTime,
   });
 }
 

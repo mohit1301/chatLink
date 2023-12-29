@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const moment = require('moment')
 
 const messageSchema = new mongoose.Schema({
   roomId: { type: mongoose.Schema.Types.ObjectId, ref: "Room", required: true },
@@ -8,12 +7,7 @@ const messageSchema = new mongoose.Schema({
   text: { type: String, required: true },
   time: {
     type: String,
-    default: new Date().toLocaleTimeString("en-US", {
-      hour: "numeric",
-      minute: "numeric",
-      hour12: true,
-      timeZone: "UTC"
-    }),
+    default: Date.now,
   },
 });
 
