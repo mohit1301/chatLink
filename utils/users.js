@@ -1,4 +1,4 @@
-const Users = require("../models/Users");
+const Users = require("../models/users");
 
 // Join user to chat
 async function userJoin(socketId, userId, userName, room) {
