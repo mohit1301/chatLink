@@ -19,7 +19,7 @@ if (!userId) {
   userId = `${userName}-${room}-${self.crypto.randomUUID()}`;
   sessionStorage.setItem('userId', userId);
 }
-console.log(userId)
+
 // Join chatroom
 socket.emit("joinRoom", { userName, room, userId });
 

@@ -35,6 +35,7 @@ function formatBotMessage(userName, text) {
       hour: "numeric",
       minute: "numeric",
       hour12: true,
+      timeZone: "UTC"
     }),
     isBot: true,
   };
