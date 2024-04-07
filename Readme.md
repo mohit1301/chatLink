@@ -25,7 +25,7 @@ To run the project locally, follow these steps:
 2. Install dependencies:
 
     ```bash
-    cd chatapp
+    cd chatLink
     npm install
     ```
 
