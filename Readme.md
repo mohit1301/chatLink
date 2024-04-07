@@ -1,12 +1,12 @@
 # ChatLink - Realtime Chat Application
 
-ChatLink is a realtime chat application built using Socket.IO & Node.js, providing users with an instant communication experience. The application includes a multi-room chat system that empowers users to create personalized chat rooms, fostering tailored interactions.
+ChatLink is a realtime chat application built using Socket.IO & NodeJs, providing users with an instant communication experience. 
 
 ## Features
 
 -   **Dynamic Multi-Room Chat System**: Users can create personalized chat rooms and engage in multiple rooms simultaneously, catering to diverse communication needs.
 
--   **Real-time User Engagement Indicators**: Implemented features such as 'User is Typing' status updates and message notifications for user join and leave events to enhance the overall user experience.
+-   **Real-time User Engagement Indicators**: Implemented features such as message notifications for user join and leave events to enhance the overall user experience.
 
 ## Deployed App Link
 
